@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #102a43;
+  --ink-soft: #36536e;
+  --muted: #64778c;
+  --line: #e6ebf0;
+  --line-strong: #d8e0e8;
+  --paper: #f7f8f7;
+  --white: #ffffff;
+  --mint: #2ee6a6;
+  --mint-deep: #0a8f63;
+  --mint-soft: #e1fbf1;
+  --lilac: #cfc4fb;
+  --lilac-soft: #f0edff;
+  --coral: #d95d47;
+  --coral-soft: #fff0ed;
+  --blue: #3b7dd8;
+  --blue-soft: #eaf4ff;
+  --gold: #c98a18;
+  --gold-soft: #fef7e6;
+}
+
+@layer base {
+  html {
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    background-color: var(--paper);
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-mono-num {
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

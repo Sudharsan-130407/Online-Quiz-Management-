@@ -1,0 +1,8 @@
+{
+  "name": "Quizly — Online Quiz Management",
+  "description": "Online quiz management workspace for educators and learners to build assessments, track activity, review submissions, and take interactive quizzes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
